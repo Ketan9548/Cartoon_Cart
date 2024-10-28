@@ -1,5 +1,8 @@
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 const Login = () => {
+  const [data, setData] = useState({ email: "", password: "" });
+  const [isRegister, setIsRegister] = useState(false);
   return (
     <div className="h-screen">
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
@@ -30,6 +33,7 @@ const Login = () => {
                   type="email"
                   required
                   autoComplete="email"
+                  value={data.email}
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
@@ -58,6 +62,7 @@ const Login = () => {
                   name="password"
                   type="password"
                   required
+                  value={data.password}
                   autoComplete="current-password"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
@@ -79,7 +84,7 @@ const Login = () => {
               to="/registration"
               className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
             >
-              Created Account 
+              Created Account
             </NavLink>
           </p>
         </div>
