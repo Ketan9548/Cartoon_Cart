@@ -21,7 +21,7 @@ ConnectedDb()
     });
   })
   .catch((err) => {
-    console.log("Mongos Db connection faield !!! ", err);
+    console.log("Mongos  Db connection faield !!! ", err);
   });
 
 
