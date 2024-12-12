@@ -7,7 +7,7 @@ const Footers = () => {
         <div className="w-screen max-w-screen-xl mx-auto p-4 md:py-8">
           <div className="sm:flex sm:items-center sm:justify-between">
             <NavLink
-              to="https://flowbite.com/"
+              to="#"
               className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
             >
               <p className="border-2 border-white rounded-2xl overflow-hidden">
