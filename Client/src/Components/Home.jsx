@@ -9,7 +9,7 @@ const Home = () => {
         <div className="flex items-center justify-center text-7xl font-thin bg-transparent rounded-xl p-4">
           See Your Best Childhood Memory with Your Favorite Cartoon
         </div>
-        <div className="md:flex items-center justify-center">
+        <div className="md:flex top-1 overflow-hidden items-center justify-center">
           <Carousel
             autoplay={true}
             autoplayDelay={4000}

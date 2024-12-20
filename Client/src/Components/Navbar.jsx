@@ -3,15 +3,16 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div className="bg-blue-300 w-full h-full">
+      <div className="bg-blue-300 top-0  w-full h-full">
         <nav className="flex flex-col md:flex-row justify-between items-center p-4 space-y-4 md:space-y-0">
           {/* Logo and Home Link */}
           <div className="flex items-center text-black font-bold text-2xl md:text-3xl space-x-3 md:space-x-0">
             <p className="mr-2">Cartoon</p>
             <p className="hidden md:block">|</p>
-            <NavLink to="/" className="text-lg md:text-xl">Home</NavLink>
+            <NavLink to="/" className="text-lg md:text-xl">
+              Home
+            </NavLink>
           </div>
-
           {/* Icon Links */}
           <div className="flex justify-center space-x-4">
             <NavLink to="/doraemon">
